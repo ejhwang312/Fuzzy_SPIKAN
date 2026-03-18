@@ -2,6 +2,8 @@
 
 **Official implementation of "Fuzzy-SPIKANs: Enhancing Separable Physics-Informed Kolmogorov-Arnold Networks via Continuous Fuzzy Aggregation"**
 
+# This class is modified from the original SPIKAN implementation ([link](https://github.com/pnnl/spikans/tree/master)) to include Fuzzy Aggregation.
+
 [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 [![JAX](https://img.shields.io/badge/JAX-0.6.2-blue.svg)](https://github.com/google/jax)
 
