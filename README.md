@@ -25,7 +25,7 @@ Furthermore, this continuous fuzzy aggregation serves as a **universal, plug-and
 The code is written in Python and relies on JAX for high-performance automatic differentiation. 
 
 1. Clone this repository:
-```bash
+
 git clone [https://github.com/ejhwang312/Fuzzy_SPIKAN.git](https://github.com/ejhwang312/Fuzzy_SPIKAN.git)
 cd Fuzzy_SPIKAN
 
