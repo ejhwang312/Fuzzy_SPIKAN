@@ -1,0 +1,63 @@
+=== 실험 파라미터 (Hyperparameters) ===
+nx: 100
+ny: 100
+nx_plot: 100
+ny_plot: 100
+kappa: 1.0
+a1: 1.0, a2: 4.0
+Layer dims: [1, 5, 5, 1]
+Learning rate (init_lr): 0.001
+k: 3
+r: 5
+Num epochs: 20000
+
+=== 평가 결과 (Evaluation Results) ===
+Mode: spikan
+  - Time per iter: 2.177 ms/iter
+  [u]
+    - L2 Error:       1.582 %
+    - Max Abs Error:  0.0480
+    - Mean Abs Error: 0.0042
+----------------------------------------
+Mode: or-spikan
+  - Time per iter: 2.956 ms/iter
+  [u]
+    - L2 Error:       1.949 %
+    - Max Abs Error:  0.0745
+    - Mean Abs Error: 0.0061
+----------------------------------------
+Mode: xor-spikan
+  - Time per iter: 2.482 ms/iter
+  [u]
+    - L2 Error:       0.536 %
+    - Max Abs Error:  0.0217
+    - Mean Abs Error: 0.0016
+----------------------------------------
+Mode: tanh_or-spikan
+  - Time per iter: 2.710 ms/iter
+  [u]
+    - L2 Error:       5.068 %
+    - Max Abs Error:  0.1657
+    - Mean Abs Error: 0.0162
+----------------------------------------
+Mode: tanh_xor-spikan
+  - Time per iter: 2.665 ms/iter
+  [u]
+    - L2 Error:       13.716 %
+    - Max Abs Error:  0.3646
+    - Mean Abs Error: 0.0391
+----------------------------------------
+Mode: sigmoid_or-spikan
+  - Time per iter: 2.901 ms/iter
+  [u]
+    - L2 Error:       1.640 %
+    - Max Abs Error:  0.0722
+    - Mean Abs Error: 0.0038
+----------------------------------------
+Mode: sigmoid_xor-spikan
+  - Time per iter: 3.022 ms/iter
+  [u]
+    - L2 Error:       1.428 %
+    - Max Abs Error:  0.0505
+    - Mean Abs Error: 0.0041
+----------------------------------------

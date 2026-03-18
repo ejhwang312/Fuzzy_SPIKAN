@@ -1,0 +1,118 @@
+=== 실험 파라미터 (Hyperparameters) ===
+nx (Interior points): 200
+ny (Interior points): 200
+nx_plot (Plot points): 100
+ny_plot (Plot points): 100
+Re (Reynolds Number): 400.0
+Layer dims: [1, 5, 5, 3]
+Learning rate (init_lr): 0.001
+k (Spline order): 3
+r (Rank): 10
+Num epochs: 100000
+
+=== 평가 결과 (Evaluation Results) ===
+Mode: spikan
+  - Time per iter: 2.829 ms/iter
+  [u]
+    - L2 Error:       68.040 %
+    - Max Abs Error:  0.4341
+    - Mean Abs Error: 0.1055
+  [v]
+    - L2 Error:       79.387 %
+    - Max Abs Error:  0.4140
+    - Mean Abs Error: 0.1029
+  [p]
+    - L2 Error:       68.728 %
+    - Max Abs Error:  0.2623
+    - Mean Abs Error: 0.0109
+----------------------------------------
+Mode: or-spikan
+  - Time per iter: 5.654 ms/iter
+  [u]
+    - L2 Error:       79.512 %
+    - Max Abs Error:  0.5238
+    - Mean Abs Error: 0.1192
+  [v]
+    - L2 Error:       97.221 %
+    - Max Abs Error:  0.6174
+    - Mean Abs Error: 0.1208
+  [p]
+    - L2 Error:       83.610 %
+    - Max Abs Error:  0.4864
+    - Mean Abs Error: 0.0178
+----------------------------------------
+Mode: xor-spikan
+  - Time per iter: 4.759 ms/iter
+  [u]
+    - L2 Error:       67.439 %
+    - Max Abs Error:  0.4547
+    - Mean Abs Error: 0.1044
+  [v]
+    - L2 Error:       82.263 %
+    - Max Abs Error:  0.4581
+    - Mean Abs Error: 0.1046
+  [p]
+    - L2 Error:       71.569 %
+    - Max Abs Error:  0.3455
+    - Mean Abs Error: 0.0106
+----------------------------------------
+Mode: tanh_or-spikan
+  - Time per iter: 3.211 ms/iter
+  [u]
+    - L2 Error:       73.173 %
+    - Max Abs Error:  0.4593
+    - Mean Abs Error: 0.1120
+  [v]
+    - L2 Error:       89.429 %
+    - Max Abs Error:  0.5228
+    - Mean Abs Error: 0.1122
+  [p]
+    - L2 Error:       76.524 %
+    - Max Abs Error:  0.3959
+    - Mean Abs Error: 0.0122
+----------------------------------------
+Mode: tanh_xor-spikan
+  - Time per iter: 3.257 ms/iter
+  [u]
+    - L2 Error:       73.935 %
+    - Max Abs Error:  0.4425
+    - Mean Abs Error: 0.1139
+  [v]
+    - L2 Error:       88.830 %
+    - Max Abs Error:  0.5149
+    - Mean Abs Error: 0.1118
+  [p]
+    - L2 Error:       73.809 %
+    - Max Abs Error:  0.2441
+    - Mean Abs Error: 0.0114
+----------------------------------------
+Mode: sigmoid_or-spikan
+  - Time per iter: 4.552 ms/iter
+  [u]
+    - L2 Error:       78.390 %
+    - Max Abs Error:  0.4941
+    - Mean Abs Error: 0.1190
+  [v]
+    - L2 Error:       94.434 %
+    - Max Abs Error:  0.5899
+    - Mean Abs Error: 0.1175
+  [p]
+    - L2 Error:       80.318 %
+    - Max Abs Error:  0.4671
+    - Mean Abs Error: 0.0148
+----------------------------------------
+Mode: sigmoid_xor-spikan
+  - Time per iter: 4.542 ms/iter
+  [u]
+    - L2 Error:       66.736 %
+    - Max Abs Error:  0.4381
+    - Mean Abs Error: 0.1033
+  [v]
+    - L2 Error:       80.810 %
+    - Max Abs Error:  0.4454
+    - Mean Abs Error: 0.1028
+  [p]
+    - L2 Error:       70.101 %
+    - Max Abs Error:  0.2356
+    - Mean Abs Error: 0.0107
+----------------------------------------

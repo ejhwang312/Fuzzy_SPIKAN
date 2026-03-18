@@ -1,0 +1,54 @@
+=== 실험 파라미터 (Hyperparameters) ===
+Nx (Spectral): 320
+nx (Model x-grid): 320
+ny (Model t-grid): 160
+D (Diffusion Coeff): 0.0001
+Layer dims: [1, 5, 5, 1]
+Learning rate (init_lr): 0.001
+k (Spline order): 5
+r (Rank): 10
+Num epochs: 100000
+
+=== 평가 결과 (Evaluation Results) ===
+Mode: spikan
+  - L2 Error:       60.776 %
+  - Max Abs Error:  1.6195
+  - Mean Abs Error: 0.2281
+  - Time per iter:  2.004 ms/iter
+----------------------------------------
+Mode: or-spikan
+  - L2 Error:       103.885 %
+  - Max Abs Error:  1.9690
+  - Mean Abs Error: 0.4172
+  - Time per iter:  2.689 ms/iter
+----------------------------------------
+Mode: xor-spikan
+  - L2 Error:       99.025 %
+  - Max Abs Error:  1.9526
+  - Mean Abs Error: 0.3894
+  - Time per iter:  4.284 ms/iter
+----------------------------------------
+Mode: tanh_or-spikan
+  - L2 Error:       108.028 %
+  - Max Abs Error:  1.9795
+  - Mean Abs Error: 0.4446
+  - Time per iter:  3.251 ms/iter
+----------------------------------------
+Mode: tanh_xor-spikan
+  - L2 Error:       99.331 %
+  - Max Abs Error:  1.9648
+  - Mean Abs Error: 0.3917
+  - Time per iter:  3.334 ms/iter
+----------------------------------------
+Mode: sigmoid_or-spikan
+  - L2 Error:       108.655 %
+  - Max Abs Error:  1.9792
+  - Mean Abs Error: 0.4473
+  - Time per iter:  3.475 ms/iter
+----------------------------------------
+Mode: sigmoid_xor-spikan
+  - L2 Error:       101.839 %
+  - Max Abs Error:  1.9631
+  - Mean Abs Error: 0.4060
+  - Time per iter:  2.417 ms/iter
+----------------------------------------
